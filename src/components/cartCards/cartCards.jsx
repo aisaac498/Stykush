@@ -4,9 +4,7 @@ import { MdDelete } from "react-icons/md";
 import { useCart } from '../../context/cartContext';
 
 function CartCards({ img, name, price, id}) {
-    // cart global state
     const { cart, setCart } = useCart();
-    // Function to remove item from cart
     const removeFromCart = (itemId) => {
         const updatedCart = cart.filter(item => item.id !== itemId);
         setCart(updatedCart);

@@ -1,13 +1,18 @@
-/* navbar styling */
 nav {
     background-color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .navbar-brand {
     letter-spacing: 2px;
     text-align: center;
     padding: 5px;
-
 }
 
 .navbar-brand .main-text {
@@ -29,15 +34,138 @@ nav {
     cursor: pointer;
 }
 
+.navbar-toggler {
+    position: absolute;
+    right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 20px;
+    
+}
 
 .nav-link {
     letter-spacing: -0.3px;
     color: black;
     font-weight: 500;
     font-size: 15px;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+    text-align: center;
 }
 
 .nav-link:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: #007bff;
+}
+
+.nav-link.active {
+    color: yellow;
+    animation: colorChange 2s ease-out forwards;
+}
+
+@keyframes colorChange {
+    to {
+        color: black;
+    }
+}
+
+/* Dropdown Menu */
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown Menu Animation */
+.nav-item .dropdown-menu {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        display: block;
+        right: 20px;
+    }
+
+    .collapse.navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 105px;
+        left: -100%;
+        opacity: 0.9;
+        transition: all 0.5s ease;
+        background: #333;
+    }
+
+    .collapse.navbar-collapse.show {
+        left: 0;
+        opacity: 0.9;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #1888ff;
+        border-radius: 0;
+    }
+
+    .btn-mobile {
+        display: block;
+    }
 }

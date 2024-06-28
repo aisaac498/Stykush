@@ -1,0 +1,26 @@
+.ticker {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .ticker::before {
+    content: '';
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+  }
+  

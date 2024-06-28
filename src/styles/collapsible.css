@@ -1,0 +1,32 @@
+.collapsible {
+    margin-bottom: 20px;
+  }
+  
+  .collapsible-header {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .collapsible-content {
+    padding: 10px 20px;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    background-color: #fafafa;
+  }
+  

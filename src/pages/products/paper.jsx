@@ -1,23 +1,22 @@
 import React from 'react'
 import ProductCards from '../../components/productCards/productCards'
 import Footer from '../../components/footer/footer'
-import '../../styles/products.css'
+import '../../styles/gallery.css'
 import useSlideAnimation from '../../animation/useSlideAnimation';
-import { makeupProducts } from '../../database/makeup';
+import { calligraphyPaper } from '../../database/paper';
 
-function Makeup() {
-  //Slide animation functionality
+function Paper() {
   useSlideAnimation();
 
   return (
     <div className='hidden'>
-      <section className=" product-header-container">
-        <h2>ALL MAKE UP PRODUCTS</h2>
-        <p>Clean, cruelty-free products to pamper, protect and nourish every skin type.</p>
+      <section className="gallery-header-container">
+        <h2>CALLIGRAPHY PAPER</h2>
+        <p>Create masterpieces on our smooth, high-quality calligraphy paper designed for precision and elegance.</p>
       </section>
-      <div className="product-container container text-center">
+      <div className="gallery-container container text-center">
         <div className="row">
-          {makeupProducts.map((product, index) => (
+          {calligraphyPaper.map((product, index) => (
             <div key={index} className="product-div col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
               <ProductCards
                 src={product.imageSrc}
@@ -36,4 +35,4 @@ function Makeup() {
   )
 }
 
-export default Makeup
+export default Paper

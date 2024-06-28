@@ -1,0 +1,83 @@
+.categories {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-item {
+  background-color: #E0E0E0; 
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.courses {
+  text-align: center;
+  padding: 20px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-item {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.course-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.course-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.course-item h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #777;
+}
+
+.course-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+.tools-software, .practice-sheets {
+  margin: 20px 0;
+}
+
+.tools-software ul, .practice-sheets ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tools-software li, .practice-sheets li {
+  margin: 5px 0;
+}
+
+.tools-software a, .practice-sheets a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.tools-software a:hover, .practice-sheets a:hover {
+  text-decoration: underline;
+}

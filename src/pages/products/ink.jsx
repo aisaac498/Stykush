@@ -1,25 +1,23 @@
 import React from 'react'
 import ProductCards from '../../components/productCards/productCards'
 import Footer from '../../components/footer/footer'
-import '../../styles/products.css'
-import { skincareProducts } from '../../database/skincare';
+import '../../styles/gallery.css'
+import { calligraphyInk } from '../../database/ink';
 import useSlideAnimation from '../../animation/useSlideAnimation';
 
-function Skin() {
-
-  //Slide animation functionality
+function Ink() {
   useSlideAnimation();
 
   return (
     <div className='hidden'>
-      <section className=" product-header-container">
-        <h2>ALL SKINCARE</h2>
-        <p>Clean, cruelty-free products to pamper, protect and nourish every skin type.</p>
+      <section className="gallery-header-container">
+        <h2>CALLIGRAPHY INKS</h2>
+        <p>Unleash your creativity with our vibrant, high-quality inks for every calligraphy style.</p>
       </section>
 
-      <div className="product-container container text-center">
+      <div className="gallery-container container text-center">
         <div className="row">
-          {skincareProducts.map((product, index) => (
+          {calligraphyInk.map((product, index) => (
             <div key={index} className="product-div col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
               <ProductCards
                 src={product.imageSrc}
@@ -37,4 +35,4 @@ function Skin() {
   )
 }
 
-export default Skin
+export default Ink

@@ -1,4 +1,3 @@
-/* carousel styling */
 .carousel-item img {
     height: 80vh;
     max-width: 100%;
@@ -36,7 +35,6 @@
     transition: 0.2s;
 }
 
-/* shop by category */
 .shop-by-category-container {
     margin-top: 5%;
     margin-bottom: 4%;
@@ -50,9 +48,8 @@
     font-size: 25px;
 }
 
-/* best sellers section */
 #best-sellers-section {
-    padding-top: 5%;
+    padding-top: 0%;
     padding-bottom: 4%;
 }
 
@@ -64,7 +61,6 @@
     font-weight: bold;
 }
 
-/* Mission about products styling */
 .mission-container {
     margin-bottom: 8%;
 }
@@ -92,7 +88,6 @@
     color: rgb(55, 81, 15);
 }
 
-/* image discount section styling */
 .img2-section .img2-text {
     margin-top: 3%;
     text-align: left;
@@ -148,13 +143,11 @@
     transition: 0.2s;
 }
 
-/* upcoming section styling */
 .upcoming-section {
     margin-top: 6%;
 }
 
 
-/* scroll animation */
 .hidden {
     opacity: 0;
     transform: translateY(20px);
@@ -167,7 +160,6 @@
     transition: opacity 1.3s ease, transform 1s ease;
 }
 
-/* media width styling */
 @media (max-width: 700px) {
     #promo-section {
         padding-bottom: 4%;

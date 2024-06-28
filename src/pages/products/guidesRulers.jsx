@@ -1,25 +1,22 @@
 import React from 'react'
 import ProductCards from '../../components/productCards/productCards'
 import Footer from '../../components/footer/footer'
-import '../../styles/products.css'
+import '../../styles/gallery.css'
 import useSlideAnimation from '../../animation/useSlideAnimation';
-import { weddingKits } from '../../database/wedding-kits';
+import { calligraphyGuidesRulers } from '../../database/guidesRulers';
 
-
-function Weddingkits() {
-  //Slide animation functionality
+function GuidesRulers() {
   useSlideAnimation();
 
   return (
     <div className='hidden'>
-      <section className=" product-header-container">
-        <h2>WEDDING KITS</h2>
-        <p>Clean, cruelty-free products to pamper, protect and nourish every skin type.</p>
+      <section className="gallery-header-container">
+        <h2>CALLIGRAPHY GUIDES & RULERS</h2>
+        <p>Perfect your art with our precision guides and rulers for flawless calligraphy every time.</p>
       </section>
-      <div className="product-container container text-center">
+      <div className="gallery-container container text-center">
         <div className="row">
-
-          {weddingKits.map((product, index) => (
+          {calligraphyGuidesRulers.map((product, index) => (
             <div key={index} className="product-div col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
               <ProductCards
                 src={product.imageSrc}
@@ -30,7 +27,6 @@ function Weddingkits() {
               />
             </div>
           ))}
-
         </div>
       </div>
 
@@ -39,4 +35,4 @@ function Weddingkits() {
   )
 }
 
-export default Weddingkits
+export default GuidesRulers

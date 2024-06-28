@@ -1,9 +1,8 @@
-// bestSellerProducts.js
 import { v4 as uuidv4 } from 'uuid';
 
 export const bestSellerProducts = [
-    { id: uuidv4(), name: "Exfoliation Mask", price: 25.00, imageSrc: "https://credobeauty.com/cdn/shop/products/marie_veronique_probiotic_exfoliation_mask_at_credo_beatuy_1426x.jpg?v=1694727446", category:'best-seller' },
-    { id: uuidv4(), name: "Frizz Hair Oil", price: 12.00, imageSrc: "https://credobeauty.com/cdn/shop/products/reverie_milk_at_credo_beauty_1946x.jpg?v=1694727565", category:'best-seller' },
-    { id: uuidv4(), name: "Liquid Liner", price: 19.00, imageSrc: "https://credobeauty.com/cdn/shop/files/Ilia_LiquidLiner_01_1426x.png?v=1712458198", category:'best-seller' },
-    { id: uuidv4(), name: "Night Cream", price: 30.00, imageSrc: "https://credobeauty.com/cdn/shop/products/juice_beauty_green_apple_brightening_emulsion_at_credo_beauty_1946x.jpg?v=1694727561", category:'best-seller' },
+    { id: uuidv4(), name: "Indigraph pen", price: 124.00, imageSrc: "https://calligraphystore.it/4632-large_default/indigraph-pen.jpg", category:'best-seller' },
+    { id: uuidv4(), name: "Hamburg Black Ink Nero Esportazione", price: 11.90, imageSrc: "https://calligraphystore.it/4190-large_default/hamburg-black-ink-nero-esportazione.jpg", category:'best-seller' },
+    { id: uuidv4(), name: "Pastel Color Paper For Copperplate", price: 20.00, imageSrc: "https://calligraphystore.it/4642-large_default/try-me-pastel-color-paper-for-copperplate.jpg", category:'best-seller' },
+    { id: uuidv4(), name: "LightTracer LED Light Box", price: 150.00, imageSrc: "https://calligraphystore.it/3948-large_default/lighttracer-led-light-box.jpg", category:'best-seller' },
 ];

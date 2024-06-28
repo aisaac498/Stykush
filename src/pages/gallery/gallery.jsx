@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import '../../styles/gallery.css';
+import '../../styles/galleryItems.css';
 import Footer from '../../components/footer/footer';
-import { productImages } from '../../database/productImg';
+import { gallery } from '../../database/gallery';
 import useSlideAnimation from '../../animation/useSlideAnimation';
 
 function Gallery() {
-    //slide animation
     useSlideAnimation();
 
     const [fullscreenImage, setFullscreenImage] = useState(null);
@@ -20,15 +19,15 @@ function Gallery() {
 
     return (
         <div>
-            <section className=" product-header-container">
+            <section className=" gallery-header-container">
                 <h2>OUR GALLERY PAGE</h2>
-                <p>Pictures of our products and our beautiful customers</p>
+                <p>Explore our curated collection of exquisite calligraphy masterpieces, showcasing the art of beautiful writing from around the world.</p>
             </section>
             <div className='gallery-bg'>
                 <div className='row'>
-                    {productImages.map((image, index) => (
+                    {gallery.map((image, index) => (
                         <div key={index} className='hidden col-lg-4 col-md-6 col-sm-6 col-12 gallery-item'>
-                            <img src={image} alt={`Product ${index + 1}`} onClick={() => openFullscreen(image)} />
+                            <img src={image} alt={`gallery ${index + 1}`} onClick={() => openFullscreen(image)} />
                         </div>
                     ))}
                 </div>

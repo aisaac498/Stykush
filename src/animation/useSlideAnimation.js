@@ -1,4 +1,3 @@
-// Create a new file named useSlideAnimation.js
 import { useEffect } from 'react';
 
 const useSlideAnimation = () => {
@@ -8,7 +7,7 @@ const useSlideAnimation = () => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('revealed');
                     entry.target.classList.remove('hidden');
-                    observer.unobserve(entry.target); // Stop observing once revealed
+                    observer.unobserve(entry.target); 
                 }
             });
         });

@@ -6,11 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 function Carts() {
-  // cart global state
   const { cart, setCart } = useCart();
-  // Calculate total price
   const totalPrice = cart.reduce((total, product) => total + product.price, 0);
-  // Function to clear cart
   const clearCart = () => {
     setCart([]);
   };

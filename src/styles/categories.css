@@ -1,0 +1,41 @@
+.categories {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1070px;
+  position: relative;
+}
+
+.category-item {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-inline: 50px;
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  
+}
+
+.category-item-beginner {
+  background-color: #ddffdd; 
+  left: 0;
+}
+
+.category-item-intermediate {
+  background-color: #ffebcc; 
+  left: 50%;
+  transform: translateX(0%);
+}
+
+.category-item-expert {
+  background-color: #ffdddd; 
+  right: 0;
+}

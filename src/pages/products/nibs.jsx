@@ -1,23 +1,22 @@
 import React from 'react'
 import ProductCards from '../../components/productCards/productCards'
 import Footer from '../../components/footer/footer'
-import '../../styles/products.css'
+import '../../styles/gallery.css'
 import useSlideAnimation from '../../animation/useSlideAnimation';
-import { nailProducts } from '../../database/nail';
+import { calligraphyNibs } from '../../database/nibs';
 
-function Nail() {
-  //Slide animation functionality
-  useSlideAnimation();
+function Nibs() {
+  useSlideAnimation()
 
   return (
     <div className='hidden'>
-      <section className=" product-header-container">
-        <h2>NAIL PRODUCTS</h2>
-        <p>Clean, cruelty-free products to pamper, protect and nourish every skin type.</p>
+      <section className="gallery-header-container">
+        <h2>CALLIGRAPHY NIBS</h2>
+        <p>Achieve flawless strokes with our premium selection of versatile calligraphy nibs.</p>
       </section>
-      <div className="product-container container text-center">
+      <div className="gallery-container container text-center">
         <div className="row">
-          {nailProducts.map((product, index) => (
+          {calligraphyNibs.map((product, index) => (
             <div key={index} className="product-div col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
               <ProductCards
                 src={product.imageSrc}
@@ -36,4 +35,4 @@ function Nail() {
   )
 }
 
-export default Nail
+export default Nibs

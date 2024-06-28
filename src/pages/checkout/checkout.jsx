@@ -5,15 +5,12 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 
 function Checkout() {
-    // cart global state
     const { setCart } = useCart();
-    const [orderPlaced, setOrderPlaced] = useState(false); // State to track if order is placed
+    const [orderPlaced, setOrderPlaced] = useState(false); 
 
     const handlePlaceOrder = (e) => {
         e.preventDefault();
-        // Clear the cart
         setCart([]);
-        // Show the order placed message
         setOrderPlaced(true);
     }
 

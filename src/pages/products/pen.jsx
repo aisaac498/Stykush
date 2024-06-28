@@ -1,27 +1,27 @@
 import React from 'react'
 import ProductCards from '../../components/productCards/productCards'
 import Footer from '../../components/footer/footer'
-import '../../styles/products.css'
+import '../../styles/gallery.css'
 import useSlideAnimation from '../../animation/useSlideAnimation';
-import { hairCareProducts } from '../../database/hair';
+import { calligraphyPen } from '../../database/pen';
 
 
-function Hair() {
-
-  //Slide animation functionality
+function Pen() {
   useSlideAnimation();
 
   return (
     <div>
       <div className='hidden'>
-        <section className=" product-header-container">
-          <h2>OUR HAIR PRODUCTS</h2>
-          <p>Nourish your hair and scalp with our safer, clean hair care.</p>
+        <section className="gallery-header-container">
+          <h2>CALLIGRAPHY PENS</h2>
+          <p>Discover the perfect pen to elevate your calligraphy with precision and elegance.</p>
         </section>
-        <div className="product-container container text-center">
+        <div className="gallery-container container text-center">
           <div className="row">
-            {hairCareProducts.map((product, index) => (
+            {calligraphyPen.map((product, index) => (
               <div key={index} className="product-div col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                
+                
                 <ProductCards
                   src={product.imageSrc}
                   name={product.name}
@@ -29,6 +29,8 @@ function Hair() {
                   id={product.id}
                   category={product.category}
                 />
+
+                
               </div>
             ))}
           </div>
@@ -39,4 +41,4 @@ function Hair() {
   )
 }
 
-export default Hair
+export default Pen

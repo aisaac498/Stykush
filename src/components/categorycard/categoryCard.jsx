@@ -8,28 +8,28 @@ function CategoryCard() {
             <h3>SHOP BY CATEGORY</h3>
             <div className='row'>
                 <div className='col-xl-3 col-lg-6 col-md-6 col-sm-6'>
-                    <Link to='products/hair'>
-                        <img src="https://images.unsplash.com/photo-1616104130421-6eccff73df1d?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id='shop-by-img' alt="..." />
+                    <Link to='products/paper'>
+                        <img src="https://unsplash.com/photos/Oz_J_FXKvIs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8Y2FsbGlncmFwaHklMjBwYXBlcnxlbnwwfHx8fDE3MTg5NzE1OTF8MA&force=true&w=1920" id='shop-by-img' alt="..." />
                     </Link>
-                    <h4>Hair Products</h4>
+                    <h4>Calligraphy Paper</h4>
                 </div>
                 <div className='col-xl-3 col-lg-6 col-md-6 col-sm-6'>
-                    <Link to='products/makeup'>
-                        <img src="https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id='shop-by-img' alt="..." />
+                    <Link to='products/pen'>
+                        <img src="https://unsplash.com/photos/JDPDMaINjko/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8Q2FsbGlncmFwaHklMjBQZW5zfGVufDB8MHx8fDE3MTkzNzc1NjJ8MA&force=true&w=1920" id='shop-by-img' alt="..." />
                     </Link>
-                    <h4>Makeup Kits</h4>
+                    <h4>Calligraphy Pens</h4>
                 </div>
                 <div className='col-xl-3 col-lg-6 col-md-6 col-sm-6'>
-                    <Link to='products/skin'>
-                        <img src="https://images.unsplash.com/photo-1599847987657-881f11b92a75?q=80&w=2700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id='shop-by-img' alt="..." />
+                    <Link to='products/ink'>
+                        <img src="https://unsplash.com/photos/6JQSN8u5Fzg/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8Y2FsbGlncmFwaHl8ZW58MHwwfHx8MTcxOTE2MzI1Mnww&force=true&w=1920" id='shop-by-img' alt="..." />
                     </Link>
-                    <h4>Skin Care</h4>
+                    <h4>Calligraphy Inks</h4>
                 </div>
                 <div className='col-xl-3 col-lg-6 col-md-6 col-sm-6'>
-                    <Link to='products/nail'>
-                        <img src="https://images.unsplash.com/photo-1534131092884-4a0a9d19dff6?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id='shop-by-img' alt="..." />
+                    <Link to='products/nibs'>
+                        <img src="https://freepngimg.com/save/48492-calligraphy-pen-hd-free-png-hq/800x800" id='shop-by-img' alt="..." />
                     </Link>
-                    <h4>Nail Art</h4>
+                    <h4>Calligraphy Nibs</h4>
                 </div>
 
             </div>
